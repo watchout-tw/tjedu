@@ -41,7 +41,8 @@
 </template>
 
 <script>
-import { markdown, PUNCT, spacingOptimizer } from '~/lib/util'
+import * as INFO from '~/data/info'
+import { markdown, PUNCT, spacingOptimizer, generateMeta } from '~/lib/util'
 import { textMap, projects } from '~/data/hackathon-2019-11'
 export default {
   data() {
@@ -55,9 +56,20 @@ export default {
       projectsIX
     }
   },
+  head() {
+    const baseURL = INFO.BASE_URL
+    const title = INFO.SITE_TITLE
+    const description = INFO.SITE_DESCRIPTION
+    const image = baseURL + 'images/fb-cover-2-with-title.png'
+    return {
+      title,
+      meta: this.generateMeta(baseURL, title, description, image)
+    }
+  },
   methods: {
     markdown,
-    spacingOptimizer
+    spacingOptimizer,
+    generateMeta
   }
 }
 </script>
