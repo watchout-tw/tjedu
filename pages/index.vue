@@ -24,7 +24,7 @@
       <div class="summary margin-bottom-single">
         <div class="id secondary-text font-size-small margin-top-4">提案 {{ project.id }}</div>
         <h3 class="title" v-html="spacingOptimizer(project.title)"></h3>
-        <a class="a-text show-details" @click="projectsIX[projectIndex].showDetails = !projectsIX[projectIndex].showDetails">{{ projectsIX[projectIndex].showDetails ? '收合' : '展開' }}</a>
+        <a class="a-block show-details font-size-tiny line-height-tight" @click="projectsIX[projectIndex].showDetails = !projectsIX[projectIndex].showDetails"><span class="a-target">{{ projectsIX[projectIndex].showDetails ? '收合' : '展開' }}</span></a>
       </div>
       <div class="details" v-show="projectsIX[projectIndex].showDetails">
         <div class="team">{{ project.team }}</div>
@@ -39,22 +39,22 @@
 </template>
 
 <script>
-import { knowsMarkdown } from 'watchout-common-functions/interfaces'
-import { spacingOptimizer } from 'watchout-common-functions/lib/bunko'
+import { markdown, PUNCT, spacingOptimizer } from '~/lib/util'
 import { textMap, projects } from '~/data/hackathon-2019-11'
 export default {
-  mixins: [knowsMarkdown],
   data() {
     let projectsIX = projects.map(project => ({
       showDetails: false
     }))
     return {
+      PUNCT,
       textMap,
       projects,
       projectsIX
     }
   },
   methods: {
+    markdown,
     spacingOptimizer
   }
 }
@@ -76,6 +76,19 @@ a.a-text,
   @include underline($black, 0.5);
   &:hover, &:focus, &:active {
     @include underline($black, 1.0);
+  }
+}
+a.a-block:not(.disabled) {
+  & {
+    .a-target {
+      display: inline;
+      @include underline($black, 0.5);
+    }
+  }
+  &:hover, &:focus, &:active {
+    .a-target {
+      @include underline($black, 1.0);
+    }
   }
 }
 
@@ -128,8 +141,7 @@ a.a-text,
       }
       > .note {
         background-color: $grey;
-        padding: 2rem;
-        font-size: 1.25rem;
+        padding: 1.25rem;
       }
     }
   }

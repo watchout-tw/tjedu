@@ -18,8 +18,10 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "marked": "^0.7.0",
     "nuxt": "2.4.5",
-    "@nuxtjs/axios": "^5.3.6"
+    "sanitize-html": "^1.20.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",
@@ -29,7 +31,6 @@
     "eslint-plugin-nuxt": ">=0.4.2",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
-    "watchout-common-assets": "file:../watchout-common-assets",
-    "watchout-common-functions": "file:../watchout-common-functions"
+    "watchout-common-assets": "file:../watchout-common-assets"
   }
 }
