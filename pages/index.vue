@@ -11,8 +11,9 @@
   <div class="description">
     <div class="content responsive-typesetting-container-medium paragraphs a-text-parent" v-html="markdown(textMap.description)"></div>
   </div>
-  <h2 class="section-title with-underline text-align-center margin-top-double margin-bottom-single"><span>成果展示</span></h2>
-  <div class="game-container">
+  <div class="section-title-container">
+    <h2 class="section-title with-underline text-align-center margin-top-double margin-bottom-single"><span>{{ textMap.showcase }}</span></h2>
+  </div>  <div class="game-container">
     <div class="game"></div>
   </div>
   <div class="projects tcl-container">
@@ -37,7 +38,9 @@
     </div>
     <div class="tcl-panel"></div>
   </div>
-  <h2 class="section-title with-underline text-align-center margin-top-double margin-bottom-single"><span>促轉小劇場</span></h2>
+  <div class="section-title-container">
+    <h2 class="section-title with-underline text-align-center margin-top-double margin-bottom-single"><span>{{ textMap.theater }}</span></h2>
+  </div>
   <div class="theater">
     <div class="movie">
       <template v-if="activeMovie.type === 'youtube'">
@@ -57,7 +60,9 @@
     <div class="tcl-panel half-width"></div>
     <div class="tcl-panel half-width"></div>
   </div>
-  <h2 class="section-title with-underline text-align-center margin-top-double margin-bottom-single"><span>更多連結</span></h2>
+  <div class="section-title-container">
+    <h2 class="section-title with-underline text-align-center margin-top-double margin-bottom-single"><span>{{ textMap.more }}</span></h2>
+  </div>
   <div class="links tcl-container">
     <div class="link tcl-panel half-width" v-for="(link, linkIndex) of links" :key="linkIndex">
       <a class="a-block" :href="link.reference" target="_blank"><span class="a-target">{{ link.text }}</span></a>
@@ -144,11 +149,6 @@ a.a-block:not(.disabled) {
   }
 }
 
-.section-title {
-  font-size: 1.25rem;
-  transform: scaleX(1.8);
-}
-
 .page.index {
   > nav {
     display: flex;
@@ -178,6 +178,14 @@ a.a-block:not(.disabled) {
     background-image: url('/images/fb-cover-2.png');
     background-position: center center;
     background-size: cover;
+  }
+  > .section-title-container {
+    width: 100%;
+    overflow: hidden;
+    > .section-title {
+      font-size: 1.25rem;
+      transform: scaleX(1.8);
+    }
   }
   > .game-container {
     background-color: $black;
