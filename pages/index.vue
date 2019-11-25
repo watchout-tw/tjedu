@@ -11,7 +11,7 @@
   <div class="description">
     <div class="content responsive-typesetting-container-medium paragraphs a-text-parent" v-html="markdown(textMap.description)"></div>
   </div>
-  <div class="section-title with-underline small text-align-center margin-top-double margin-bottom-single"><span>成果展示</span></div>
+  <h2 class="section-title with-underline text-align-center margin-top-double margin-bottom-single"><span>成果展示</span></h2>
   <div class="game-container">
     <div class="game"></div>
   </div>
@@ -37,13 +37,43 @@
     </div>
     <div class="tcl-panel"></div>
   </div>
+  <h2 class="section-title with-underline text-align-center margin-top-double margin-bottom-single"><span>促轉小劇場</span></h2>
+  <div class="theater">
+    <div class="movie">
+      <template v-if="activeMovie.type === 'youtube'">
+        <iframe class="content embed" :src="`https://www.youtube.com/embed/${activeMovie.id}`" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </template>
+      <template v-else-if="activeMovie.type === 'fb'">
+        <iframe class="content embed" :src="`https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fwatch%2F%3Fv%3D${activeMovie.id}&show_text=false&appId`" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
+      </template>
+    </div>
+  </div>
+  <div class="playlist tcl-container margin-top-8">
+    <div class="item tcl-panel half-width" v-for="(movie, movieIndex) of movies" :key="movieIndex" @click="activeMovieIndex = movieIndex">
+      <div class="image" :style="{ backgroundImage: 'url(' + (movie.type === 'youtube' ? `https://img.youtube.com/vi/${movie.id}/maxresdefault.jpg` : '') + ')'}"></div>
+      <h3 class="small margin-top-bottom-4" v-html="spacingOptimizer(movie.title)"></h3>
+    </div>
+    <div class="tcl-panel half-width"></div>
+    <div class="tcl-panel half-width"></div>
+    <div class="tcl-panel half-width"></div>
+  </div>
+  <h2 class="section-title with-underline text-align-center margin-top-double margin-bottom-single"><span>參考資料</span></h2>
+  <div class="links tcl-container">
+    <div class="link tcl-panel half-width" v-for="(link, linkIndex) of links" :key="linkIndex">
+      <a class="a-block" :href="link.reference" target="_blank"><span class="a-target">{{ link.text }}</span></a>
+    </div>
+    <div class="tcl-panel half-width"></div>
+    <div class="tcl-panel half-width"></div>
+    <div class="tcl-panel half-width"></div>
+  </div>
+  <footer></footer>
 </div>
 </template>
 
 <script>
 import * as INFO from '~/data/info'
 import { markdown, PUNCT, spacingOptimizer, generateMeta } from '~/lib/util'
-import { textMap, projects } from '~/data/hackathon-2019-11'
+import { textMap, projects, movies, links } from '~/data/hackathon-2019-11'
 export default {
   data() {
     let projectsIX = projects.map(project => ({
@@ -53,7 +83,15 @@ export default {
       PUNCT,
       textMap,
       projects,
-      projectsIX
+      projectsIX,
+      movies,
+      activeMovieIndex: 0,
+      links
+    }
+  },
+  computed: {
+    activeMovie() {
+      return this.movies[this.activeMovieIndex]
     }
   },
   head() {
@@ -106,6 +144,11 @@ a.a-block:not(.disabled) {
   }
 }
 
+.section-title {
+  font-size: 1.25rem;
+  transform: scaleX(1.8);
+}
+
 .page.index {
   > nav {
     display: flex;
@@ -137,7 +180,7 @@ a.a-block:not(.disabled) {
     background-size: cover;
   }
   > .game-container {
-    background-color: $color-light-grey;
+    background-color: $black;
     > .game {
       @include rect(1);
       max-width: 30rem;
@@ -181,6 +224,34 @@ a.a-block:not(.disabled) {
         font-size: $font-size-small;
       }
     }
+  }
+  > .theater {
+    max-height: 33.75rem;
+    display: flex;
+    justify-content: center;
+    background-color: $black;
+    > .movie {
+      @include rect(16/9);
+      max-width: 60rem;
+    }
+  }
+  > .playlist {
+    > .item {
+      margin-bottom: 0;
+      cursor: pointer;
+      > .image {
+        @include rect(16/9);
+        background-color: $grey;
+        background-position: center center;
+        background-size: cover;
+      }
+    }
+  }
+  > footer {
+    margin-top: 8rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background-color: $black;
   }
 }
 </style>

@@ -51,3 +51,46 @@ export const projects = [
     doc: 'https://docs.google.com/document/d/1Jl_wG99JA7cSFs6DMBU51ktqMaL7cwpYagpu7CJ67Ag/edit'
   }
 ]
+
+export const movies = [
+  {
+    type: 'youtube',
+    id: 'q3jZ97mWwYQ',
+    title: '《不是自己寫的日記》'
+  },
+  {
+    type: 'youtube',
+    id: 'Iho3877zTVM',
+    title: '《反白》'
+  },
+  {
+    type: 'fb',
+    id: '342685159836039',
+    title: '促轉會《監控檔案當事人閱覽計畫》：林俊義'
+  },
+  {
+    type: 'fb',
+    id: '918751228502315',
+    title: '促轉會《監控檔案當事人閱覽計畫》：李喬'
+  },
+  {
+    type: 'fb',
+    id: '1623059037831271',
+    title: '「遲來的正義」：促轉會有罪判決撤銷公告'
+  }
+]
+
+export const links = [
+  {
+    text: '決定書',
+    reference: 'https://www.tjc.gov.tw/decision'
+  },
+  {
+    text: '促轉會 Fb 專頁',
+    reference: 'https://www.facebook.com/twtjc/'
+  },
+  {
+    text: '《療遇時光機》Fb 專頁',
+    reference: 'https://www.facebook.com/Encounteringourpast/'
+  }
+]
