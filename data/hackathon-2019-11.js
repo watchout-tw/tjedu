@@ -92,5 +92,9 @@ export const links = [
   {
     text: '《療遇時光機》Fb 專頁',
     reference: 'https://www.facebook.com/Encounteringourpast/'
+  },
+  {
+    text: '其他參考資料',
+    reference: 'https://hackmd.io/@watchout/SyhsDnaFB'
   }
 ]

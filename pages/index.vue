@@ -57,7 +57,7 @@
     <div class="tcl-panel half-width"></div>
     <div class="tcl-panel half-width"></div>
   </div>
-  <h2 class="section-title with-underline text-align-center margin-top-double margin-bottom-single"><span>參考資料</span></h2>
+  <h2 class="section-title with-underline text-align-center margin-top-double margin-bottom-single"><span>更多連結</span></h2>
   <div class="links tcl-container">
     <div class="link tcl-panel half-width" v-for="(link, linkIndex) of links" :key="linkIndex">
       <a class="a-block" :href="link.reference" target="_blank"><span class="a-target">{{ link.text }}</span></a>
