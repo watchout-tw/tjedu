@@ -14,7 +14,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
+    "generate": "mv docs/CNAME ./CNAME; rm -rf docs; nuxt generate; mv ./CNAME docs/CNAME",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
