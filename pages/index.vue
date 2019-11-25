@@ -26,7 +26,7 @@
         <h3 class="title" v-html="spacingOptimizer(project.title)"></h3>
         <a class="a-block show-details font-size-tiny line-height-tight" @click="projectsIX[projectIndex].showDetails = !projectsIX[projectIndex].showDetails"><span class="a-target">{{ projectsIX[projectIndex].showDetails ? '收合' : '展開' }}</span></a>
       </div>
-      <div class="details" v-show="projectsIX[projectIndex].showDetails">
+      <div class="details margin-bottom-single" v-show="projectsIX[projectIndex].showDetails">
         <div class="team">{{ textMap.projectOwner }}{{ PUNCT.COLON }}{{ project.team }}</div>
         <div class="description paragraphs margin-8 secondary-text font-size-small" v-html="markdown(project.description)"></div>
         <a class="a-block font-size-tiny" :href="project.doc" target="_blank"><span class="a-target">看詳細成果</span></a>
@@ -103,7 +103,7 @@ a.a-block:not(.disabled) {
       @include rect(1);
       width: $nav-height;
       background-color: $yellow;
-      background-image: url('/logo-2-small.png');
+      background-image: url('/images/logo-2-small.png');
       background-position: center center;
       background-size: cover;
     }
@@ -120,7 +120,7 @@ a.a-block:not(.disabled) {
       @include rect(3);
     }
     background-color: $grey;
-    background-image: url('/fb-cover-2.png');
+    background-image: url('/images/fb-cover-2.png');
     background-position: center center;
     background-size: cover;
   }
@@ -140,7 +140,7 @@ a.a-block:not(.disabled) {
       > .image {
         @include rect(2/1);
         background-color: $grey;
-        background-image: url('/banner-2.png');
+        background-image: url('/images/banner-2.png');
         background-position: center center;
         background-size: cover;
       }
@@ -149,7 +149,18 @@ a.a-block:not(.disabled) {
         > .show-details {
           position: absolute;
           top: 0;
-          right: 0;
+          right: 1rem;
+          @include tcl-sm {
+            right: 0;
+          }
+        }
+      }
+      > .summary,
+      > .details {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        @include tcl-sm {
+          padding: 0;
         }
       }
       > .note {

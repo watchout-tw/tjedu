@@ -10,7 +10,7 @@ export default {
       { hid: 'description', name: 'description', content: INFO.SITE_DESCRIPTION }
     ],
     link: [
-      { rel: 'icon', type: 'image/png', href: '/logo-2-small.png' }
+      { rel: 'icon', type: 'image/png', href: '/images/logo-2-small.png' }
     ]
   },
   loading: {
@@ -30,8 +30,7 @@ export default {
   // Build configuration
   build: {
     transpile: [
-      'watchout-common-assets',
-      'watchout-common-functions'
+      'watchout-common-assets'
     ],
     // Extend webpack config here
     extend(config, ctx) {
@@ -45,5 +44,8 @@ export default {
         })
       }
     }
+  },
+  generate: {
+    dir: 'docs'
   }
 }
