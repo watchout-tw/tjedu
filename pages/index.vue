@@ -21,13 +21,15 @@
     </div>
     <div class="project tcl-panel" v-for="(project, projectIndex) of projects" :key="projectIndex">
       <div class="image"></div>
-      <div class="summary margin-bottom-single">
+      <div class="summary margin-bottom-8">
         <div class="id secondary-text font-size-small margin-top-4">提案 {{ project.id }}</div>
         <h3 class="title" v-html="spacingOptimizer(project.title)"></h3>
         <a class="a-block show-details font-size-tiny line-height-tight" @click="projectsIX[projectIndex].showDetails = !projectsIX[projectIndex].showDetails"><span class="a-target">{{ projectsIX[projectIndex].showDetails ? '收合' : '展開' }}</span></a>
       </div>
       <div class="details" v-show="projectsIX[projectIndex].showDetails">
-        <div class="team">{{ project.team }}</div>
+        <div class="team">{{ textMap.projectOwner }}{{ PUNCT.COLON }}{{ project.team }}</div>
+        <div class="description paragraphs margin-8 secondary-text font-size-small" v-html="markdown(project.description)"></div>
+        <a class="a-block font-size-tiny" :href="project.doc" target="_blank"><span class="a-target">看詳細成果</span></a>
       </div>
     </div>
     <div class="project tcl-panel">
@@ -101,6 +103,9 @@ a.a-block:not(.disabled) {
       @include rect(1);
       width: $nav-height;
       background-color: $yellow;
+      background-image: url('/logo-2-small.png');
+      background-position: center center;
+      background-size: cover;
     }
     > .title {
       line-height: $nav-height;
@@ -120,12 +125,12 @@ a.a-block:not(.disabled) {
     background-size: cover;
   }
   > .game-container {
-    background-color: $grey;
+    background-color: $color-light-grey;
     > .game {
       @include rect(1);
       max-width: 30rem;
       margin: 0 auto;
-      background-color: $yellow;
+      background-color: $grey;
     }
   }
   > .projects {
@@ -139,9 +144,18 @@ a.a-block:not(.disabled) {
         background-position: center center;
         background-size: cover;
       }
+      > .summary {
+        position: relative;
+        > .show-details {
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+      }
       > .note {
-        background-color: $grey;
-        padding: 1.25rem;
+        background-color: rgba($yellow, 0.65);
+        padding: 1rem;
+        font-size: $font-size-small;
       }
     }
   }
