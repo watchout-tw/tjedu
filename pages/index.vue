@@ -2,7 +2,7 @@
 <div class="page index">
   <nav>
     <div class="logo"></div>
-    <div class="title">轉型正義教育黑客松</div>
+    <div class="title">{{ textMap.title }}</div>
   </nav>
   <div class="banner"></div>
   <div class="intro margin-top-bottom-double">
@@ -23,8 +23,8 @@
       <div class="image"></div>
       <div class="summary margin-bottom-single">
         <div class="id secondary-text font-size-small margin-top-4">提案 {{ project.id }}</div>
-        <h3 class="title">{{ project.title }}</h3>
-        <div class="show-details" @click="projectsIX[projectIndex].showDetails = true">展開</div>
+        <h3 class="title" v-html="spacingOptimizer(project.title)"></h3>
+        <a class="a-text show-details" @click="projectsIX[projectIndex].showDetails = !projectsIX[projectIndex].showDetails">{{ projectsIX[projectIndex].showDetails ? '收合' : '展開' }}</a>
       </div>
       <div class="details" v-show="projectsIX[projectIndex].showDetails">
         <div class="team">{{ project.team }}</div>
@@ -40,6 +40,7 @@
 
 <script>
 import { knowsMarkdown } from 'watchout-common-functions/interfaces'
+import { spacingOptimizer } from 'watchout-common-functions/lib/bunko'
 import { textMap, projects } from '~/data/hackathon-2019-11'
 export default {
   mixins: [knowsMarkdown],
@@ -52,20 +53,27 @@ export default {
       projects,
       projectsIX
     }
+  },
+  methods: {
+    spacingOptimizer
   }
 }
 </script>
 
 <style lang="scss">
 @import '~watchout-common-assets/styles/resources';
+
+// local variables
 $yellow: #FFDF2E;
 $black: #222;
 $grey: #CCC;
 $nav-height: 3rem;
 
+// override watchout-common-assets
+a.a-text,
 .a-text-parent a {
   display: inline;
-  @include underline($black, 0.65);
+  @include underline($black, 0.5);
   &:hover, &:focus, &:active {
     @include underline($black, 1.0);
   }
@@ -94,6 +102,9 @@ $nav-height: 3rem;
       @include rect(3);
     }
     background-color: $grey;
+    background-image: url('/fb-cover-2.png');
+    background-position: center center;
+    background-size: cover;
   }
   > .game-container {
     background-color: $grey;
@@ -110,7 +121,10 @@ $nav-height: 3rem;
     > .project {
       > .image {
         @include rect(2/1);
-        background-color: $yellow;
+        background-color: $grey;
+        background-image: url('/banner-2.png');
+        background-position: center center;
+        background-size: cover;
       }
       > .note {
         background-color: $grey;
