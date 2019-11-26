@@ -53,7 +53,7 @@
   </div>
   <div class="playlist tcl-container margin-top-8">
     <div class="item tcl-panel half-width" v-for="(movie, movieIndex) of movies" :key="movieIndex" @click="activeMovieIndex = movieIndex">
-      <div class="image" :style="{ backgroundImage: 'url(' + (movie.type === 'youtube' ? `https://img.youtube.com/vi/${movie.id}/maxresdefault.jpg` : '') + ')'}"></div>
+      <div class="image" :style="{ backgroundImage: `url(${movie.image})`}"></div>
       <h3 class="small margin-top-bottom-4" v-html="spacingOptimizer(movie.title)"></h3>
     </div>
     <div class="tcl-panel half-width"></div>
