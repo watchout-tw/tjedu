@@ -76,7 +76,7 @@ export default {
       }
     },
     async onSelectACtion(item) {
-      if(item.type === 'SCRIPT') {
+      if(item.type === 'SCRIPT' || item.type === 'START') {
         switch(item.link[0]) {
           case 'SYSTEM':
             this.selectCharacter = this.SYSTEM
@@ -85,10 +85,18 @@ export default {
             this.selectCharacter = this.CHARACTER_A
             break
         }
-        this.selectDisplay = false
-        await this.delay()
-        this.pushChat(this.selectCharacter[item.link[1]])
-        this.msgPadding = 0
+
+        if (item.type === 'SCRIPT') {
+          this.selectDisplay = false
+          await this.delay()
+          this.pushChat(this.selectCharacter[item.link[1]])
+          this.msgPadding = 0
+        } else if(item.type === 'START') {
+          this.chatData = []
+          this.pushChat(this.selectCharacter[item.link[1]])
+          this.selectDisplay = false
+          this.msgPadding = 0
+        };
       } else if(item.type === 'LINK') {
         window.open(item.link, '_blank')
       } else if(item.type === 'START') {

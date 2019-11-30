@@ -24,6 +24,13 @@
         </div>
       </div>
     </template>
+    <template v-else-if="data.type == 'SYS_ALERT'">
+      <div class="msg-br" style="text-align: ccenter;">
+        <div class="sys-alert-message">
+          <div class="msg-text" v-html="data.msg"></div>
+        </div>
+      </div>
+    </template>
   </div>
 </template>
 
@@ -118,5 +125,13 @@ export default {
   text-align: left;
   text-align:justify;
   max-width: 80%;
+}
+
+.sys-alert-message{
+  color: red;
+  font-weight: 700;
+  font-style:oblique;
+  text-align: center;
+  padding: 8px;
 }
 </style>
