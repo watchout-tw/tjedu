@@ -107,7 +107,83 @@ export const CHARACTER_A = {
         type: 'SYS_ALERT',
         msg: `
         <i class="fas fa-2x fa-exclamation-triangle"></i><br/>
-        「對話涉及敏感議題，違反國家政策！你的信用分數從1950下降為410！」`
+        對話涉及敏感議題，違反國家政策！你的信用分數從1950下降為410！`
+      }
+    ],
+    nextTo: 'SELECT',
+    selects: [
+      {
+        type: 'SCRIPT',
+        link: ['CHARACTER_A', 'a1'],
+        msg: '驚慌'
+      },
+      {
+        type: 'SCRIPT',
+        link: ['CHARACTER_A', 'a2'],
+        msg: '說理'
+      },
+      {
+        type: 'SCRIPT',
+        link: ['CHARACTER_A', 'a3'],
+        msg: '生氣反駁'
+      }
+    ]
+  },
+  a1: {
+    script: [
+      {
+        type: 'R_MSG',
+        msg: '媽你亂說什麼？'
+      },
+      {
+        type: 'R_MSG',
+        msg: '我的信用分數怎麼會突然下降那麼多'
+      },
+      {
+        type: 'L_MSG_WITH_AVATAR',
+        msg: '...'
+      },
+      {
+        type: 'L_MSG',
+        msg: '就跟你說這個政府一直在監控每個人，包含我們的對話，這個政府就是這樣在侵害我們的自由'
+      },
+      {
+        type: 'R_MSG',
+        msg: '怎麼可能有這種事..'
+      },
+      {
+        type: 'R_MSG',
+        msg: '學姊明明跟我說加入童軍社，是幫國家做事，是做對的事情...'
+      },
+      {
+        type: 'L_MSG_WITH_AVATAR',
+        msg: '別相信什麼學姊，她說不定就是政府派來監視你們社團的'
+      },
+      {
+        type: 'R_MSG',
+        msg: '我上次看到學姊在翻其他同學的書包，難道就是在監視我們嗎...'
+      },
+      {
+        type: 'SYS_ALERT',
+        msg: `
+        <i class="fas fa-2x fa-exclamation-triangle"></i><br/>
+        對話涉及敏感議題，違反國家政策！你的信用分數從410下降為125！`
+      },
+      {
+        type: 'R_MSG',
+        msg: '天阿，我的信用分數又下降了...'
+      },
+      {
+        type: 'L_MSG_WITH_AVATAR',
+        msg: '別管什麼信用分數了，今天下課後趕快回家吧，不要去什麼童軍社了'
+      },
+      {
+        type: 'R_MSG',
+        msg: '但是其他人都有去，現在不去會被其他同學笑啦...'
+      },
+      {
+        type: 'R_MSG',
+        msg: '不准去就是不准去，難道你想跟媽一樣被關12年嗎'
       }
     ],
     nextTo: 'SELECT',

@@ -127,8 +127,8 @@ export default {
       } else {
         dice = Math.floor(sec * 110 + Math.random() * (100))
       }
-      if(dice > 1800) {
-        dice = 1800
+      if(dice > 2200) {
+        dice = 2200
       }
       return new Promise((resolve, reject) => {
         setTimeout(() => {
