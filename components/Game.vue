@@ -8,12 +8,16 @@
   <template v-if="selectDisplay">
     <GameSelect :data="selectData" @onselect="onSelectACtion" />
   </template>
+  <template v-if="endDisplay">
+    <GameEnd :data="endData" />
+  </template>
 </div>
 </template>
 
 <script>
 import GameChat from '~/components/GameChat'
 import GameSelect from '~/components/GameSelect'
+import GameEnd from '~/components/GameEnd'
 import { SYSTEM, CHARACTER_A } from '~/data/game'
 
 export default {
@@ -25,6 +29,8 @@ export default {
       selectCharacter: null,
       selectData: null,
       selectDisplay: false,
+      endData: null,
+      endDisplay: false,
       msgPadding: 0
     }
   },
@@ -50,7 +56,14 @@ export default {
         case 'SELECT':
           this.doActionSelect(data.selects)
           break
+        case 'END':
+          this.doActionEnd(data.end)
+          break
       }
+    },
+    doActionEnd(data) {
+      this.endData = data
+      this.endDisplay = true
     },
     doActionSelect(selects) {
       this.selectData = selects
@@ -88,6 +101,7 @@ export default {
 
         if (item.type === 'SCRIPT') {
           this.selectDisplay = false
+          this.endDisplay = false
           await this.delay()
           this.pushChat(this.selectCharacter[item.link[1]])
           this.msgPadding = 0
@@ -95,6 +109,7 @@ export default {
           this.chatData = []
           this.pushChat(this.selectCharacter[item.link[1]])
           this.selectDisplay = false
+          this.endDisplay = false
           this.msgPadding = 0
         };
       } else if(item.type === 'LINK') {
@@ -104,6 +119,7 @@ export default {
         this.chatData = []
         this.pushChat(this.selectCharacter[item.link[1]])
         this.selectDisplay = false
+        this.endDisplay = false
         this.msgPadding = 0
       }
     },
@@ -127,8 +143,8 @@ export default {
       } else {
         dice = Math.floor(sec * 110 + Math.random() * (100))
       }
-      if(dice > 2200) {
-        dice = 2200
+      if(dice > 200) {
+        dice = 200
       }
       return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -149,7 +165,7 @@ export default {
     }
   },
   components: {
-    GameChat, GameSelect
+    GameChat, GameSelect, GameEnd
   }
 }
 </script>

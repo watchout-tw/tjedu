@@ -39,7 +39,6 @@ export default {
   letter-spacing: normal;
   text-align: center;
   color: #ffffff;
-  border-radius: 19px;
   border: solid 1px #ffffff;
   margin-bottom: 12px;
   padding: 5px 15px;

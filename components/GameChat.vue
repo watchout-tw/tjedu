@@ -31,6 +31,13 @@
         </div>
       </div>
     </template>
+    <template v-else-if="data.type == 'SYS_GOOD'">
+      <div class="msg-br" style="text-align: ccenter;">
+        <div class="sys-good-message">
+          <div class="msg-text" v-html="data.msg"></div>
+        </div>
+      </div>
+    </template>
   </div>
 </template>
 
@@ -127,11 +134,15 @@ export default {
   max-width: 80%;
 }
 
-.sys-alert-message{
-  color: red;
+.sys-alert-message, .sys-good-message{
+  color: #dc3545;
   font-weight: 700;
   font-style:oblique;
   text-align: center;
   padding: 8px;
+}
+
+.sys-good-message{
+  color: #28a745;
 }
 </style>
