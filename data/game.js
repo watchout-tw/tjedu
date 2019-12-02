@@ -221,7 +221,7 @@ export const CHARACTER_A = {
         msg: '你想太多了'
       },
       {
-        type: 'R_MSG',
+        type: 'L_MSG_WITH_AVATAR',
         msg: '不准去就是不准去，難道你想跟媽一樣被關12年嗎'
       }
     ],
