@@ -5,6 +5,7 @@
       <div class="gameEndVideoOpenText">
         <a target="_blank" :href="'https://youtu.be/' + data.goto.youtube ">{{openTxt}}</a>
       </div>
+      <div class="gameEndGoto" @click="onReStart">{{reStartTxt}}</div>
     </div>
     <div v-else>
       <div v-html="data.msg" ></div>
@@ -19,12 +20,16 @@ export default {
   data() {
     return {
       isVideo: false,
-      openTxt: '>> 另開影片於新分頁 <<'
+      openTxt: '( 另開影片於新分頁 )',
+      reStartTxt: '>> 重啟對話 <<'
     }
   },
   methods: {
     showVideo() {
       this.isVideo = true
+    },
+    onReStart() {
+      this.$emit('onReStart')
     }
   }
 }
@@ -44,11 +49,18 @@ export default {
     height: stretch;
 }
 
-.gameEndGoto, .gameEndVideoOpenText {
-  margin-top: 2rem;
+.gameEndGoto {
+  margin-top: 8rem;
   text-align: center;
   border: white solid 1px;
   padding: 5px 15px;
+  cursor: pointer;
+}
+
+.gameEndVideoOpenText {
+  font-size: 0.8rem;
+  text-decoration: underline;
+  text-align: center;
   cursor: pointer;
 }
 

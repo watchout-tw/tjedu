@@ -9,7 +9,7 @@
     <GameSelect :data="selectData" @onselect="onSelectACtion" />
   </template>
   <template v-if="endDisplay">
-    <GameEnd :data="endData" />
+    <GameEnd :data="endData" @onReStart="onReStartACtion" />
   </template>
 </div>
 </template>
@@ -122,6 +122,14 @@ export default {
         this.endData = this.selectCharacter[item.link[1]]
         this.endDisplay = true
       }
+    },
+    onReStartACtion() {
+      this.onSelectACtion(
+        {
+          type:'START',
+          link: ['SYSTEM', 'start']
+        }
+      )
     },
     onSelectCharacter(character) {
       this.selectCharacter = character
