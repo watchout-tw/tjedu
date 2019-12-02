@@ -50,7 +50,7 @@ export default {
 }
 
 .gameEndGoto {
-  margin-top: 8rem;
+  margin-top: 4rem;
   text-align: center;
   border: white solid 1px;
   padding: 5px 15px;
