@@ -15,11 +15,11 @@ export const SYSTEM = {
       },
       {
         type: 'L_MSG',
-        msg: '你是小珍，是一位高中生，使用「我的國app」累積了非常高的信用分數，而得到了加入童軍社的機會。在這個年代，加入童軍社，經過受訓之後成為幹部，幾乎就等於取得大學第一志願的門票。'
+        msg: '你是小珍，上高中後學校要求所有人都要使用「我的國app」，只要在日常生活中遵守國家政策，信用分數就會增加。你累積了非常高的信用分數，而得到了加入童軍社的機會。在這個年代，加入童軍社，經過幹部訓練之後擔任幹部，幾乎就等於取得大學第一志願的門票。'
       },
       {
         type: 'L_MSG',
-        msg: '現在你因為要參加童軍社受訓，需要得到父母的同意。'
+        msg: '現在你因為要參加童軍社幹部訓練，需要得到父母的同意。然而，一向要求你只要好好讀書的媽媽，究竟會不會同意呢？'
       }
     ],
     nextTo: 'SELECT',
@@ -41,6 +41,10 @@ export const CHARACTER_A = {
   step1: {
     script: [
       {
+        type: 'R_MSG',
+        msg: '媽～我想參加童軍社的幹部訓練，你幫我簽一下同意書～'
+      },
+      {
         type: 'L_MSG_WITH_AVATAR',
         msg: `<div style="text-align: center;"><i class="fas fa-2x fa-phone"></i></div>
               <div>未接來電</div>`
@@ -57,51 +61,39 @@ export const CHARACTER_A = {
       },
       {
         type: 'L_MSG_WITH_AVATAR',
-        msg: '怎麼都不回'
+        msg: '跟你說過多少次了，一定要接電話'
       },
       {
         type: 'L_MSG',
-        msg: '不是跟你說，一定要接媽媽的電話'
+        msg: '不要讓媽擔心！'
+      },
+      {
+        type: 'R_MSG',
+        msg: '沒有啦，剛剛在忙'
+      },
+      {
+        type: 'R_MSG',
+        msg: '媽幫我簽同意書啦～剛剛學姊又來催我了'
+      },
+      {
+        type: 'L_MSG_WITH_AVATAR',
+        msg: '我什麼時候說你可以參加社團了？社團很危險。'
+      },
+      {
+        type: 'R_MSG',
+        msg: '社團到底哪裡危險？而且我參加的是童軍社欸，一定很安全！'
+      },
+      {
+        type: 'R_MSG',
+        msg: '我好不容易才可以加入童軍社，沒去幹部訓練等於放棄第一志願！'
+      },
+      {
+        type: 'L_MSG_WITH_AVATAR',
+        msg: '不准去就是不准去！你好好讀書也可以上第一志願！'
       },
       {
         type: 'L_MSG',
-        msg: '沒接電話，媽會擔心！！！'
-      },
-      {
-        type: 'R_MSG_WITH_AVATAR',
-        msg: '沒有啦，剛剛學姊來找我聊天，我在學校很忙'
-      },
-      {
-        type: 'R_MSG',
-        msg: '對了，媽你要記得簽同意書喔，剛剛學姊又來催我要交'
-      },
-      {
-        type: 'L_MSG_WITH_AVATAR',
-        msg: '什麼同意書？'
-      },
-      {
-        type: 'R_MSG',
-        msg: '就上次跟你說的童軍社要受訓，你要簽同意書啦'
-      },
-      {
-        type: 'L_MSG_WITH_AVATAR',
-        msg: '跟你說過多少次了，加入社團很危險，你怎麼還去？'
-      },
-      {
-        type: 'R_MSG_WITH_AVATAR',
-        msg: '加入社團，到底哪裡危險了？'
-      },
-      {
-        type: 'R_MSG',
-        msg: '媽～我好不容易才可以加入童軍社，沒去受訓會被扣分啦！'
-      },
-      {
-        type: 'L_MSG_WITH_AVATAR',
-        msg: '不准去就是不准去！好好讀書就好'
-      },
-      {
-        type: 'L_MSG',
-        msg: '這個政府在每個地方都會監控人，你就算什麼都沒做，萬一在社團被別人陷害告密，你可能就會被關，一輩子就毀了！'
+        msg: '媽跟你說，政府隨時都在監控人，就算是學校社團也一樣。就算你什麼都沒做，萬一在社團被別人陷害告密，別說是第一志願了，你一輩子就毀了！'
       },
       {
         type: 'SYS_ALERT',
@@ -134,19 +126,15 @@ export const CHARACTER_A = {
     script: [
       {
         type: 'R_MSG',
-        msg: '媽你亂說什麼？'
+        msg: '媽 你在說什麼？'
       },
       {
         type: 'R_MSG',
-        msg: '我的信用分數怎麼會突然下降那麼多'
+        msg: '我的信用分數怎麼突然降那麼多！'
       },
       {
         type: 'L_MSG_WITH_AVATAR',
-        msg: '...'
-      },
-      {
-        type: 'L_MSG',
-        msg: '就跟你說這個政府一直在監控每個人，包含我們的對話，這個政府就是這樣在侵害我們的自由'
+        msg: '就跟你說政府一直在監控，一定連我們的對話都監控。政府就是這樣在侵害我們的自由！'
       },
       {
         type: 'R_MSG',
@@ -181,7 +169,7 @@ export const CHARACTER_A = {
       },
       {
         type: 'R_MSG',
-        msg: '但是其他人都有去，現在不去會被其他同學笑啦...'
+        msg: '但是不去的話，第一志願就......'
       },
       {
         type: 'R_MSG',
@@ -198,7 +186,7 @@ export const CHARACTER_A = {
       {
         type: 'SCRIPT',
         link: ['CHARACTER_A', 'b2'],
-        msg: '好奇媽媽當年發生了什麼事'
+        msg: '想知道媽媽以前發生了什麼事'
       }
     ]
   },
@@ -206,39 +194,31 @@ export const CHARACTER_A = {
     script: [
       {
         type: 'R_MSG',
-        msg: '媽你亂說什麼？'
+        msg: '媽 你在說什麼？'
       },
       {
         type: 'R_MSG',
-        msg: '我的信用分數怎麼會突然下降那麼多'
+        msg: '我的信用分數怎麼突然降那麼多！'
       },
       {
         type: 'L_MSG_WITH_AVATAR',
-        msg: '...'
-      },
-      {
-        type: 'L_MSG',
-        msg: '就跟你說這個政府一直在監控每個人，包含我們的對話，這個政府就是這樣在侵害我們的自由'
+        msg: '就跟你說政府一直在監控，一定連我們的對話都監控。政府就是這樣在侵害我們的自由！'
       },
       {
         type: 'R_MSG',
-        msg: '只要我們沒有做壞事，就不用怕被監控啊'
+        msg: '我們又沒做錯事，幹嘛怕監控'
       },
       {
         type: 'R_MSG',
-        msg: '媽，我一定要去童軍社啦，學姊說只要當上幹部，很有機會考上好大學耶'
+        msg: '我要去童軍社啦，學姊也說只要當上幹部，第一志願不是問題'
       },
       {
         type: 'L_MSG_WITH_AVATAR',
-        msg: '考上好大學，有比生命重要嗎'
-      },
-      {
-        type: 'L_MSG',
-        msg: '媽只希望你平平安安長大...'
+        msg: '第一志願比較重要，還是你的命比較重要'
       },
       {
         type: 'R_MSG',
-        msg: '其他人都可以去，為什麼我不能去？不管啦，我一定要去'
+        msg: '你想太多了'
       },
       {
         type: 'R_MSG',
@@ -255,7 +235,7 @@ export const CHARACTER_A = {
       {
         type: 'SCRIPT',
         link: ['CHARACTER_A', 'b2'],
-        msg: '好奇媽媽當年發生了什麼事'
+        msg: '想知道媽媽以前發生了什麼事'
       }
     ]
   },
@@ -263,11 +243,11 @@ export const CHARACTER_A = {
     script: [
       {
         type: 'R_MSG',
-        msg: '媽你亂說什麼？'
+        msg: '媽 你在說什麼？'
       },
       {
         type: 'R_MSG',
-        msg: '我的信用分數怎麼會突然下降那麼多'
+        msg: '我的信用分數怎麼突然降那麼多！'
       },
       {
         type: 'L_MSG_WITH_AVATAR',
@@ -275,15 +255,15 @@ export const CHARACTER_A = {
       },
       {
         type: 'L_MSG',
-        msg: '就跟你說這個政府一直在監控每個人，包含我們的對話，這個政府就是這樣在侵害我們的自由'
+        msg: '就跟你說政府一直在監控，一定連我們的對話都監控。政府就是這樣在侵害我們的自由！'
       },
       {
         type: 'R_MSG',
-        msg: '學姊說監控是為了國家社會安定，才不是要侵害自由'
+        msg: '學姊說監控是為了維護國家社會安定，才不是侵害自由'
       },
       {
         type: 'R_MSG',
-        msg: '媽你不要再亂講話了，不要再害我下降信用分數了'
+        msg: '你不要再講了，不要再害我信用分數下降了'
       },
       {
         type: 'SYS_GOOD',
@@ -294,15 +274,15 @@ export const CHARACTER_A = {
       },
       {
         type: 'L_MSG_WITH_AVATAR',
-        msg: '...'
+        msg: '政府才不是你想的那樣'
       },
       {
         type: 'L_MSG',
-        msg: '媽只是想要你平平安安長大'
+        msg: '我不准你去是為你好'
       },
       {
         type: 'L_MSG',
-        msg: '拜託你相信媽，不要去參加社團好不好'
+        msg: '我再說一次，不准去社團'
       },
       {
         type: 'R_MSG',
@@ -314,11 +294,11 @@ export const CHARACTER_A = {
       },
       {
         type: 'R_MSG',
-        msg: '就算你不簽同意書，我還是會去受訓！'
+        msg: '就算你不簽同意書，我還是會去幹部訓練！'
       },
       {
         type: 'L_MSG_WITH_AVATAR',
-        msg: '你為什麼都不聽話，難道你想跟媽一樣被關12年嗎'
+        msg: '你難道你想跟媽一樣，因為社團被關12年嗎'
       }
     ],
     nextTo: 'SELECT',
@@ -331,7 +311,7 @@ export const CHARACTER_A = {
       {
         type: 'SCRIPT',
         link: ['CHARACTER_A', 'b2'],
-        msg: '好奇媽媽當年發生了什麼事'
+        msg: '想知道媽媽以前發生了什麼事'
       }
     ]
   },
@@ -339,94 +319,88 @@ export const CHARACTER_A = {
     script: [
       {
         type: 'R_MSG',
-        msg: '什麼？媽你被關過'
+        msg: '被關？怎麼可能'
       },
       {
         type: 'R_MSG',
-        msg: '你不要再講了，不要再害我被扣分了'
+        msg: '你不要再講了，我不想被扣分了'
       },
       {
         type: 'L_MSG_WITH_AVATAR',
-        msg: '媽真的只是為了你好，等你今天晚上回家，再跟你說清楚以前發生的事好嗎'
+        msg: '我在你出生前就因為參加社團被關了12年'
       },
       {
         type: 'R_MSG',
-        msg: '媽你不要再講奇怪的話了，我不想聽了'
+        msg: '你不要再講，我不想聽'
       }
     ],
-    nextTo: 'END',
-    end: {
-      msg: `
-      那天，你關上手機，儘管媽媽打了很多通電話，但你都沒有回電。<br/><br/>
-      每次媽媽要跟你說起過去的故事，你都生氣或是逃避。<br/><br/>
-      漸漸的，你和媽媽不再對話。<br/><br/>
-      很多很多年以後，偶然間你看到了這段影片，才知道那段屬於媽媽的故事。<br/><br/>
-      屬於火燒島的流麻溝，女思想犯的故事。
-      `,
-      goto: {
-        title: '>> 看這段媽媽的故事 <<',
-        youtube: '6EyW9XFPmcM'
+    nextTo: 'SELECT',
+    selects: [
+      {
+        type: 'END',
+        link: ['CHARACTER_A', 'end1'],
+        msg: '結束通話'
       }
-    }
+    ]
   },
   b2: {
     script: [
       {
         type: 'R_MSG',
-        msg: '媽以前你怎麼都沒說被關的事？'
-      },
-      {
-        type: 'R_MSG',
-        msg: '你怎麼會被關的？'
+        msg: '被關？怎麼回事？'
       },
       {
         type: 'L_MSG_WITH_AVATAR',
-        msg: '以前不告訴你，是怕你知道太多，也會有危險'
+        msg: '你出生前，我因為參加社團被關了12年'
       },
       {
         type: 'R_MSG',
-        msg: '怎麼會有這種事情發生在你身上？'
-      },
-      {
-        type: 'R_MSG',
-        msg: '媽，我想知道你以前的事'
+        msg: '怎麼沒聽你說過？'
       },
       {
         type: 'L_MSG_WITH_AVATAR',
-        msg: '媽也一直想告訴你'
-      },
-      {
-        type: 'L_MSG',
-        msg: '用手機講不安全，今天下課趕快回家，媽再告訴你'
-      },
-      {
-        type: 'L_MSG',
-        msg: '媽不是故意那麼兇的不讓你社團'
-      },
-      {
-        type: 'L_MSG',
-        msg: '媽真的只是為了你好'
+        msg: '怕政府找你麻煩'
       },
       {
         type: 'R_MSG',
-        msg: '媽，我知道！'
+        msg: '到底是怎麼回事？'
       },
       {
-        type: 'R_MSG',
-        msg: '今天回家，你一定要告訴我喔！'
+        type: 'L_MSG_WITH_AVATAR',
+        msg: '晚上回來再說吧'
       }
     ],
-    nextTo: 'END',
-    end: {
-      msg: `
-      你關上手機。<br/><br/>
-      你也拒絕了學姊加入童軍社。<br/><br/>
-      回家後，才終於聽媽媽說起那段故事，屬於火燒島的流麻溝，女思想犯的故事。
-      `,
-      goto: {
-        title: '>> 聽媽媽說故事 <<',
-        youtube: '6EyW9XFPmcM'
+    nextTo: 'SELECT',
+    selects: [
+      {
+        type: 'END',
+        link: ['CHARACTER_A', 'end2'],
+        msg: '結束通話'
       }
+    ]
+  },
+  end1: {
+    msg: `
+    那天，你關上手機，儘管媽媽打了很多通電話，但你都沒有回電。<br/><br/>
+    每次媽媽要跟你說起過去的故事，你都生氣或是逃避。<br/><br/>
+    漸漸的，你和媽媽不再對話。<br/><br/>
+    很多很多年以後，偶然間你看到了這段影片，才知道那段屬於媽媽的故事。<br/><br/>
+    屬於火燒島的流麻溝，女思想犯的故事。
+    `,
+    goto: {
+      title: '>> 看這段媽媽的故事 <<',
+      youtube: 'pRzHEPzx-1I'
+    }
+  },
+  end2: {
+    msg: `
+    你盯著手機，看了好一陣子。<br/><br/>
+    隨後傳了訊息給學姊，說你不去幹部訓練了。隨後收了書包回家。<br/><br/>
+    這天晚上，才終於聽媽媽說起那段故事，屬於火燒島的流麻溝，女思想犯的故事。
+    `,
+    goto: {
+      title: '>> 聽媽媽說故事 <<',
+      youtube: 'pRzHEPzx-1I'
     }
   }
 }

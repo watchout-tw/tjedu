@@ -56,9 +56,13 @@ export default {
         case 'SELECT':
           this.doActionSelect(data.selects)
           break
+        /*
         case 'END':
+          await this.delay()
+          await this.delay()
           this.doActionEnd(data.end)
           break
+        */
       }
     },
     doActionEnd(data) {
@@ -114,13 +118,9 @@ export default {
         };
       } else if(item.type === 'LINK') {
         window.open(item.link, '_blank')
-      } else if(item.type === 'START') {
-        this.selectCharacter = this.SYSTEM
-        this.chatData = []
-        this.pushChat(this.selectCharacter[item.link[1]])
-        this.selectDisplay = false
-        this.endDisplay = false
-        this.msgPadding = 0
+      } else if(item.type === 'END') {
+        this.endData = this.selectCharacter[item.link[1]]
+        this.endDisplay = true
       }
     },
     onSelectCharacter(character) {
@@ -143,8 +143,8 @@ export default {
       } else {
         dice = Math.floor(sec * 110 + Math.random() * (100))
       }
-      if(dice > 200) {
-        dice = 200
+      if(dice > 2100) {
+        dice = 2100
       }
       return new Promise((resolve, reject) => {
         setTimeout(() => {

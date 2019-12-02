@@ -56,7 +56,7 @@ export default {
   width:100%;
   min-height: 30vh;
   margin: auto;
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
 
 </style>
