@@ -10,19 +10,19 @@ export const SYSTEM = {
         msg: '你好，歡迎來到I2R4年，你將展開一段對話去體驗獨裁政權的年代裡，人們會有什麼樣的對話，以及世代思想的差異。'
       },
       {
-        type: 'L_MSG',
+        type: 'L_MSG_WITH_AVATAR',
         msg: '故事內容會因為你選項而有所不同，你準備好進入這個世界了嗎？'
       },
       {
-        type: 'L_MSG',
-        msg: '你是小珍，上高中後學校要求所有人都要使用「我的國app」，只要在日常生活中遵守國家政策，信用分數就會增加。你累積了非常高的信用分數，而得到了加入童軍社的機會。在這個年代，加入童軍社，經過幹部訓練之後擔任幹部，幾乎就等於取得大學第一志願的門票。'
+        type: 'L_MSG_WITH_AVATAR',
+        msg: '你是小珍，上高中後學校要求所有人都要使用「我的國app」，只要在日常生活中遵守國家政策，信用分數就會增加。'
       },
       {
-        type: 'L_MSG',
+        type: 'L_MSG_WITH_AVATAR',
         msg: '你累積了非常高的信用分數，而得到了加入童軍社的機會。在這個年代，加入童軍社，經過幹部訓練之後擔任幹部，幾乎就等於取得大學第一志願的門票。'
       },
       {
-        type: 'L_MSG',
+        type: 'L_MSG_WITH_AVATAR',
         msg: '現在你因為要參加童軍社幹部訓練，需要得到父母的同意。然而，一向要求你只要好好讀書的媽媽，究竟會不會同意呢？'
       }
     ],
@@ -68,7 +68,7 @@ export const CHARACTER_A = {
         msg: '跟你說過多少次了，一定要接電話'
       },
       {
-        type: 'L_MSG',
+        type: 'L_MSG_WITH_AVATAR',
         msg: '不要讓媽擔心！'
       },
       {
@@ -96,11 +96,11 @@ export const CHARACTER_A = {
         msg: '不准去就是不准去！你好好讀書也可以上第一志願！'
       },
       {
-        type: 'L_MSG',
+        type: 'L_MSG_WITH_AVATAR',
         msg: '媽跟你說，政府隨時都在監控人，就算是學校社團也一樣。'
       },
       {
-        type: 'L_MSG',
+        type: 'L_MSG_WITH_AVATAR',
         msg: '就算你什麼都沒做，萬一在社團被別人陷害告密，別說是第一志願了，你一輩子就毀了！'
       },
       {
@@ -262,7 +262,7 @@ export const CHARACTER_A = {
         msg: '...'
       },
       {
-        type: 'L_MSG',
+        type: 'L_MSG_WITH_AVATAR',
         msg: '就跟你說政府一直在監控，一定連我們的對話都監控。政府就是這樣在侵害我們的自由！'
       },
       {
@@ -285,11 +285,11 @@ export const CHARACTER_A = {
         msg: '政府才不是你想的那樣'
       },
       {
-        type: 'L_MSG',
+        type: 'L_MSG_WITH_AVATAR',
         msg: '我不准你去是為你好'
       },
       {
-        type: 'L_MSG',
+        type: 'L_MSG_WITH_AVATAR',
         msg: '我再說一次，不准去社團'
       },
       {
@@ -302,7 +302,7 @@ export const CHARACTER_A = {
       },
       {
         type: 'R_MSG',
-        msg: '就算你不簽同意書，我還是會去幹部訓練！'
+        msg: '就算你不幫我簽同意書，我還是會去幹部訓練！'
       },
       {
         type: 'L_MSG_WITH_AVATAR',
@@ -397,7 +397,7 @@ export const CHARACTER_A = {
     `,
     goto: {
       title: '>> 看這段媽媽的故事 <<',
-      youtube: 'pRzHEPzx-1I'
+      youtube: 'pRzHEPzx-1I?t=693'
     }
   },
   end2: {
@@ -408,7 +408,7 @@ export const CHARACTER_A = {
     `,
     goto: {
       title: '>> 聽媽媽說故事 <<',
-      youtube: 'pRzHEPzx-1I'
+      youtube: 'pRzHEPzx-1I?t=693'
     }
   }
 }
