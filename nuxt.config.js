@@ -11,6 +11,9 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '/images/logo-2-small.png' }
+    ],
+    script: [
+      { src: 'https://kit.fontawesome.com/e5839234d1.js', crossorigin: 'anonymous' }
     ]
   },
   loading: {

@@ -14,7 +14,7 @@
   <div class="section-title-container">
     <h2 class="section-title with-underline text-align-center margin-top-double margin-bottom-single"><span>{{ textMap.showcase }}</span></h2>
   </div>  <div class="game-container">
-    <div class="game"></div>
+    <game />
   </div>
   <div class="projects tcl-container">
     <div class="project tcl-panel">
@@ -76,6 +76,7 @@
 </template>
 
 <script>
+import Game from '~/components/Game'
 import * as INFO from '~/data/info'
 import { markdown, PUNCT, spacingOptimizer, generateMeta } from '~/lib/util'
 import { textMap, projects, movies, links } from '~/data/hackathon-2019-11'
@@ -113,6 +114,9 @@ export default {
     markdown,
     spacingOptimizer,
     generateMeta
+  },
+  components: {
+    Game
   }
 }
 </script>
@@ -189,6 +193,7 @@ a.a-block:not(.disabled) {
   }
   > .game-container {
     background-color: $black;
+    padding: 2rem;
     > .game {
       @include rect(1);
       max-width: 30rem;
