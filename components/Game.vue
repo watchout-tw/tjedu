@@ -139,12 +139,12 @@ export default {
     delay(sec = null) {
       let dice = 1000
       if(!sec) {
-        dice = Math.floor(Math.random() * (1200 - 700 + 1)) + 700
+        dice = Math.floor(Math.random() * (1200 - 800 + 1)) + 800
       } else {
-        dice = Math.floor(sec * 110 + Math.random() * (100))
+        dice = Math.floor(sec * 150 + Math.random() * (100))
       }
-      if(dice > 2100) {
-        dice = 2100
+      if(dice > 2600) {
+        dice = 2600
       }
       return new Promise((resolve, reject) => {
         setTimeout(() => {
