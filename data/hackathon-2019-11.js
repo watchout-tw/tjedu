@@ -85,21 +85,37 @@ export const movies = [
     id: '1623059037831271',
     title: '「遲來的正義」：促轉會有罪判決撤銷公告',
     image: '/images/innocence.jpg'
+  },
+  {
+    type: 'youtube',
+    id: 'pRzHEPzx-1I',
+    title: '流麻溝女思想',
+    image: 'https://img.youtube.com/vi/pRzHEPzx-1I/maxresdefault.jpg'
+  },
+  {
+    type: 'youtube',
+    id: '8PPD1GHvpFY',
+    title: '六張犁戒嚴時期政治受難者墓園首次發現原住民當事人',
+    image: 'https://img.youtube.com/vi/8PPD1GHvpFY/maxresdefault.jpg'
   }
 ]
 
 export const links = [
   {
-    text: '決定書',
+    text: '平復司法不法決定書',
     reference: 'https://www.tjc.gov.tw/decision'
   },
   {
-    text: '促轉會 Fb 專頁',
+    text: '促轉會 Facebook 專頁',
     reference: 'https://www.facebook.com/twtjc/'
   },
   {
-    text: '《療遇時光機》Fb 專頁',
+    text: '《療遇時光機》Facebook 專頁',
     reference: 'https://www.facebook.com/Encounteringourpast/'
+  },
+  {
+    text: '互動式遊戲《想家》',
+    reference: 'https://www.tjc-monitoraround.tw'
   },
   {
     text: '其他參考資料',
