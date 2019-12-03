@@ -6,6 +6,7 @@ export const textMap = {
   toAllProjects: '「轉型正義教育黑客松」總共徵集到了 35 個提案，感謝所有提案者。你可以[點這裡看所有提案](https://hackmd.io/@watchout/SJkuNGPtS/)。',
   projectOwner: '提案者',
   showcase: '提案成果',
+  home: '《回家》',
   theater: '促轉影音',
   more: '更多連結'
 }

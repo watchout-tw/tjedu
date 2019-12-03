@@ -13,7 +13,9 @@
   </div>
   <div class="section-title-container">
     <h2 class="section-title with-underline text-align-center margin-top-double margin-bottom-single"><span>{{ textMap.showcase }}</span></h2>
-  </div>  <div class="game-container">
+  </div>
+  <div class="game-container">
+    <h3 class="game-title">{{ textMap.home }}</h3>
     <game />
   </div>
   <div class="projects tcl-container">
@@ -194,6 +196,11 @@ a.a-block:not(.disabled) {
   > .game-container {
     background-color: $black;
     padding: 2rem;
+    > .game-title {
+      margin-bottom: 1rem;
+      text-align: center;
+      color: white;
+    }
     > .game {
       @include rect(1);
       max-width: 30rem;
