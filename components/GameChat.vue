@@ -108,7 +108,6 @@ export default {
   border-radius: 4px;
   padding: 8px;
   margin-left: 58px;
-  text-align:justify;
 }
 
 .reader-triangle {
@@ -130,7 +129,6 @@ export default {
   background-color: rgba(54, 54, 54, 0.8);
   color: #FFFFFF;
   text-align: left;
-  text-align:justify;
   max-width: 80%;
 }
 
