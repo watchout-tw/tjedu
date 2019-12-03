@@ -397,7 +397,8 @@ export const CHARACTER_A = {
     `,
     goto: {
       title: '>> 看這段媽媽的故事 <<',
-      youtube: 'pRzHEPzx-1I?t=693'
+      youtube: 'pRzHEPzx-1I',
+      start: 693
     }
   },
   end2: {
@@ -408,7 +409,8 @@ export const CHARACTER_A = {
     `,
     goto: {
       title: '>> 聽媽媽說故事 <<',
-      youtube: 'pRzHEPzx-1I?t=693'
+      youtube: 'pRzHEPzx-1I',
+      start: 693
     }
   }
 }
