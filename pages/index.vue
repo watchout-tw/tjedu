@@ -73,7 +73,20 @@
     <div class="tcl-panel half-width"></div>
     <div class="tcl-panel half-width"></div>
   </div>
-  <footer></footer>
+  <footer>
+    <div class="orgs-container tcl-container">
+      <div class="orgs tcl-panel full-width tcl-left-right-margin">
+        <div class="org margin-bottom-single">
+          <img src="/images/tjc-logo-white.png" height="256px" />
+          <div class="margin-top-bottom-8 font-size-small">主辦</div>
+        </div>
+        <div class="org margin-bottom-single">
+          <img src="/images/watchout-logo-white.png" height="24px" />
+          <div class="margin-top-bottom-8 font-size-small">用心協辦</div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </div>
 </template>
 
@@ -130,6 +143,7 @@ export default {
 $yellow: #FFDF2E;
 $black: #222;
 $grey: #CCC;
+$dark-grey: #555;
 $nav-height: 3rem;
 
 // override watchout-common-assets
@@ -272,6 +286,7 @@ a.a-block:not(.disabled) {
     padding-top: 8rem;
     padding-bottom: 8rem;
     background-color: $black;
+    color: $dark-grey;
   }
 }
 </style>
