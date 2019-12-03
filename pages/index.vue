@@ -32,7 +32,10 @@
       <div class="details margin-bottom-single" v-show="projectsIX[projectIndex].showDetails">
         <div class="team">{{ textMap.projectOwner }}{{ PUNCT.COLON }}{{ project.team }}</div>
         <div class="description paragraphs margin-8 secondary-text font-size-small" v-html="markdown(project.description)"></div>
-        <a class="a-block font-size-tiny" :href="project.doc" target="_blank"><span class="a-target">看詳細成果</span></a>
+        <div class="links">
+          <a class="link a-block" :href="project.result" target="_blank"><span class="a-target">看詳細成果</span></a>
+          <a class="link a-block" :href="project.originalDoc" target="_blank"><span class="a-target">看原始提案</span></a>
+        </div>
       </div>
     </div>
     <div class="project tcl-panel">
@@ -250,6 +253,15 @@ a.a-block:not(.disabled) {
         padding-right: 1rem;
         @include tcl-sm {
           padding: 0;
+        }
+      }
+      > .details {
+        > .links {
+          display: flex;
+          font-size: $font-size-small;
+          > .link {
+            margin-right: 1em;
+          }
         }
       }
       > .note {

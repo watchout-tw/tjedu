@@ -17,42 +17,48 @@ export const projects = [
     title: '《回家》：文字冒險遊戲',
     team: '周冠妤、陳羿竹、柯昱均',
     description: '數十年前他們被迫從自己的家庭、原先的人生軌道分離。而如今轉型正義才讓他們開啟了回家的路，雖然直到今日的台灣，轉型正義仍是一個正在進行、有許多問題尚待解決的工作。',
-    doc: 'https://docs.google.com/document/d/1y1fHM3tyfPHfoPGhoLYIi1PzY4ZAosUEyL7ANeQjxOE/edit'
+    originalDoc: 'https://docs.google.com/document/d/1y1fHM3tyfPHfoPGhoLYIi1PzY4ZAosUEyL7ANeQjxOE/edit',
+    result: 'https://docs.google.com/document/d/1xOIGLJ3IFtZogGtgmDmB0sF4jY3zHfqqIVixFpPPmYY/edit'
   },
   {
     id: 5,
     title: '創受難者前輩臉書',
     team: '張恬瑜、陳怡璇、李建宏、王怡婷',
     description: '數十年前他們被迫從自己的家庭、原先的人生軌道分離。而如今轉型正義才讓他們開啟了回家的路，雖然直到今日的台灣，轉型正義仍是一個正在進行、有許多問題尚待解決的工作。',
-    doc: 'https://docs.google.com/document/d/1XO1zfR3i4C5HVBDIHDokc1KjnoYt2rL6chdZjfxJPAo/edit'
+    originalDoc: 'https://docs.google.com/document/d/1XO1zfR3i4C5HVBDIHDokc1KjnoYt2rL6chdZjfxJPAo/edit',
+    result: 'https://docs.google.com/document/d/1QpFp_tEmSUemwKn7Q3SIU7Au2BUb8H6d4vF7I9fiB-E/edit'
   },
   {
     id: 10,
     title: '視覺化文本：身體紀念碑',
     team: '李佳泓',
     description: '數十年前他們被迫從自己的家庭、原先的人生軌道分離。而如今轉型正義才讓他們開啟了回家的路，雖然直到今日的台灣，轉型正義仍是一個正在進行、有許多問題尚待解決的工作。',
-    doc: 'https://docs.google.com/document/d/1jquWBAwTREr64yHc4r2FKTon0QONKD7q1y5-ypuTFiM/edit'
+    originalDoc: 'https://docs.google.com/document/d/1jquWBAwTREr64yHc4r2FKTon0QONKD7q1y5-ypuTFiM/edit',
+    result: 'https://docs.google.com/document/d/16H8h7cbhVWCwWgCh9Bhkib3P5wuoYQ6pLBDCENxsOnU/edit'
   },
   {
     id: 22,
     title: '陸拾日',
     team: '陳彥宇',
     description: '數十年前他們被迫從自己的家庭、原先的人生軌道分離。而如今轉型正義才讓他們開啟了回家的路，雖然直到今日的台灣，轉型正義仍是一個正在進行、有許多問題尚待解決的工作。',
-    doc: 'https://docs.google.com/document/d/1sMX9DXT_uDCNCP42h_ip3uX-YuPH0cxabIFpK-Ys47s/edit'
+    originalDoc: 'https://docs.google.com/document/d/1sMX9DXT_uDCNCP42h_ip3uX-YuPH0cxabIFpK-Ys47s/edit',
+    result: 'https://docs.google.com/document/d/1M-snk6tryQikTHuULvy31IwyZAGm3FCaRJTJXoKqiYc/edit'
   },
   {
     id: 24,
     title: '牆國與蛋',
     team: '歐湘瀅、簡廷軒',
     description: '數十年前他們被迫從自己的家庭、原先的人生軌道分離。而如今轉型正義才讓他們開啟了回家的路，雖然直到今日的台灣，轉型正義仍是一個正在進行、有許多問題尚待解決的工作。',
-    doc: 'https://docs.google.com/document/d/14-X_rLNjdGVVo0e_O7H2I31bELY8jqJwHhBugY_T5VE/edit'
+    originalDoc: 'https://docs.google.com/document/d/14-X_rLNjdGVVo0e_O7H2I31bELY8jqJwHhBugY_T5VE/edit',
+    result: 'https://docs.google.com/document/d/1VOkKrzBWNVT7Q9ZBLjWBVP-VJFbq7vQVWw64OMt48C0/edit'
   },
   {
     id: 29,
     title: '考古小隊秘密探險：阿石的造神古遺跡',
     team: '朱芳儀、蘇琬婷',
     description: '數十年前他們被迫從自己的家庭、原先的人生軌道分離。而如今轉型正義才讓他們開啟了回家的路，雖然直到今日的台灣，轉型正義仍是一個正在進行、有許多問題尚待解決的工作。',
-    doc: 'https://docs.google.com/document/d/1Jl_wG99JA7cSFs6DMBU51ktqMaL7cwpYagpu7CJ67Ag/edit'
+    originalDoc: 'https://docs.google.com/document/d/1Jl_wG99JA7cSFs6DMBU51ktqMaL7cwpYagpu7CJ67Ag/edit',
+    result: 'https://docs.google.com/document/d/1ffe3AXiVqkMB5gE7haGlLgG0PTmIau-TS_3gknco-PE/edit'
   }
 ]
 
