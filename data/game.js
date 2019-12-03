@@ -31,7 +31,7 @@ export const SYSTEM = {
       {
         type: 'START',
         link: ['CHARACTER_A', 'step1'],
-        msg: '>> 開始遊戲 <<'
+        msg: '>> 開始對話 <<'
       }
     ]
   }
