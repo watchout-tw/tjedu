@@ -181,7 +181,7 @@ a.a-block:not(.disabled) {
       @include rect(3);
     }
     background-color: $grey;
-    background-image: url('/images/fb-cover-2.png');
+    background-image: url('/images/fb-cover-2-with-title.png');
     background-position: center center;
     background-size: cover;
   }
