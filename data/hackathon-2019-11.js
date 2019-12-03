@@ -15,6 +15,7 @@ export const projects = [
   {
     id: 17,
     title: '《回家》：文字冒險遊戲',
+    image: 'project-banner-17.png',
     team: '周冠妤、陳羿竹、柯昱均',
     description: '數十年前他們被迫從自己的家庭、原先的人生軌道分離。而如今轉型正義才讓他們開啟了回家的路，雖然直到今日的台灣，轉型正義仍是一個正在進行、有許多問題尚待解決的工作。',
     originalDoc: 'https://docs.google.com/document/d/1y1fHM3tyfPHfoPGhoLYIi1PzY4ZAosUEyL7ANeQjxOE/edit',
@@ -23,6 +24,7 @@ export const projects = [
   {
     id: 5,
     title: '創受難者前輩臉書',
+    image: 'project-banner-5.png',
     team: '張恬瑜、陳怡璇、李建宏、王怡婷',
     description: '數十年前他們被迫從自己的家庭、原先的人生軌道分離。而如今轉型正義才讓他們開啟了回家的路，雖然直到今日的台灣，轉型正義仍是一個正在進行、有許多問題尚待解決的工作。',
     originalDoc: 'https://docs.google.com/document/d/1XO1zfR3i4C5HVBDIHDokc1KjnoYt2rL6chdZjfxJPAo/edit',
@@ -31,6 +33,7 @@ export const projects = [
   {
     id: 10,
     title: '視覺化文本：身體紀念碑',
+    image: 'project-banner-10.png',
     team: '李佳泓',
     description: '數十年前他們被迫從自己的家庭、原先的人生軌道分離。而如今轉型正義才讓他們開啟了回家的路，雖然直到今日的台灣，轉型正義仍是一個正在進行、有許多問題尚待解決的工作。',
     originalDoc: 'https://docs.google.com/document/d/1jquWBAwTREr64yHc4r2FKTon0QONKD7q1y5-ypuTFiM/edit',
@@ -39,6 +42,7 @@ export const projects = [
   {
     id: 22,
     title: '陸拾日',
+    image: 'project-banner-22.png',
     team: '陳彥宇',
     description: '數十年前他們被迫從自己的家庭、原先的人生軌道分離。而如今轉型正義才讓他們開啟了回家的路，雖然直到今日的台灣，轉型正義仍是一個正在進行、有許多問題尚待解決的工作。',
     originalDoc: 'https://docs.google.com/document/d/1sMX9DXT_uDCNCP42h_ip3uX-YuPH0cxabIFpK-Ys47s/edit',
@@ -47,6 +51,7 @@ export const projects = [
   {
     id: 24,
     title: '牆國與蛋',
+    image: 'project-banner-24.png',
     team: '歐湘瀅、簡廷軒',
     description: '數十年前他們被迫從自己的家庭、原先的人生軌道分離。而如今轉型正義才讓他們開啟了回家的路，雖然直到今日的台灣，轉型正義仍是一個正在進行、有許多問題尚待解決的工作。',
     originalDoc: 'https://docs.google.com/document/d/14-X_rLNjdGVVo0e_O7H2I31bELY8jqJwHhBugY_T5VE/edit',
@@ -55,6 +60,7 @@ export const projects = [
   {
     id: 29,
     title: '考古小隊秘密探險：阿石的造神古遺跡',
+    image: 'project-banner-29.png',
     team: '朱芳儀、蘇琬婷',
     description: '數十年前他們被迫從自己的家庭、原先的人生軌道分離。而如今轉型正義才讓他們開啟了回家的路，雖然直到今日的台灣，轉型正義仍是一個正在進行、有許多問題尚待解決的工作。',
     originalDoc: 'https://docs.google.com/document/d/1Jl_wG99JA7cSFs6DMBU51ktqMaL7cwpYagpu7CJ67Ag/edit',

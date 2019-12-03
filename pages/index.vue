@@ -23,7 +23,7 @@
       <div class="note paragraphs no-margin a-text-parent" v-html="markdown(textMap.introToProjects)"></div>
     </div>
     <div class="project tcl-panel" v-for="(project, projectIndex) of projects" :key="projectIndex">
-      <div class="image"></div>
+      <div class="image" :style="{ backgroundImage: `url(/images/${project.image})` }"></div>
       <div class="summary margin-bottom-8">
         <div class="id secondary-text font-size-small margin-top-4">提案 {{ project.id }}</div>
         <h3 class="title" v-html="spacingOptimizer(project.title)"></h3>
@@ -232,7 +232,7 @@ a.a-block:not(.disabled) {
       > .image {
         @include rect(2/1);
         background-color: $grey;
-        background-image: url('/images/banner-2.png');
+        background-image: url('/images/banner-2.png'); // default image
         background-position: center center;
         background-size: cover;
       }
