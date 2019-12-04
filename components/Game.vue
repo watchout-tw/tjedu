@@ -103,7 +103,7 @@ export default {
             break
         }
 
-        if (item.type === 'SCRIPT') {
+        if(item.type === 'SCRIPT') {
           this.selectDisplay = false
           this.endDisplay = false
           await this.delay()
@@ -126,7 +126,7 @@ export default {
     onReStartACtion() {
       this.onSelectACtion(
         {
-          type:'START',
+          type: 'START',
           link: ['SYSTEM', 'start']
         }
       )

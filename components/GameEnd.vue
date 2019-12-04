@@ -3,13 +3,13 @@
     <div v-if="isVideo">
       <iframe class="gameEndVideo" :src=" 'https://www.youtube.com/embed/' + data.goto.youtube + '?start=' + data.goto.start" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <div class="gameEndVideoOpenText">
-        <a target="_blank" :href="'https://youtu.be/' + data.goto.youtube + '?t=' + data.goto.start">{{openTxt}}</a>
+        <a target="_blank" :href="'https://youtu.be/' + data.goto.youtube + '?t=' + data.goto.start">{{ openTxt }}</a>
       </div>
-      <div class="gameEndGoto" @click="onReStart">{{reStartTxt}}</div>
+      <div class="gameEndGoto" @click="onReStart">{{ reStartTxt }}</div>
     </div>
     <div v-else>
-      <div v-html="data.msg" ></div>
-      <div class="gameEndGoto" @click="showVideo">{{data.goto.title}}</div>
+      <div v-html="data.msg"></div>
+      <div class="gameEndGoto" @click="showVideo">{{ data.goto.title }}</div>
     </div>
   </div>
 </template>
