@@ -14,7 +14,7 @@ export const textMap = {
 export const projects = [
   {
     id: 17,
-    title: '《回家》：文字冒險遊戲',
+    title: '回家：文字冒險遊戲',
     image: 'project-banner-17.png',
     team: '周冠妤、陳羿竹、柯昱均',
     description: '數十年前他們被迫從自己的家庭、原先的人生軌道分離。而如今轉型正義才讓他們開啟了回家的路，雖然直到今日的台灣，轉型正義仍是一個正在進行、有許多問題尚待解決的工作。',
