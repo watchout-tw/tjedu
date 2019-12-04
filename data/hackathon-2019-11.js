@@ -72,31 +72,31 @@ export const movies = [
   {
     type: 'youtube',
     id: 'q3jZ97mWwYQ',
-    title: '《不是自己寫的日記》',
+    title: '不是自己寫的日記',
     image: 'https://img.youtube.com/vi/q3jZ97mWwYQ/maxresdefault.jpg'
   },
   {
     type: 'youtube',
     id: 'Iho3877zTVM',
-    title: '《反白》',
+    title: '反白',
     image: 'https://img.youtube.com/vi/Iho3877zTVM/maxresdefault.jpg'
   },
   {
     type: 'fb',
     id: '342685159836039',
-    title: '促轉會《監控檔案當事人閱覽計畫》：林俊義',
+    title: '監控檔案當事人閱覽計畫：林俊義',
     image: '/images/lin-jun-yi.jpg'
   },
   {
     type: 'fb',
     id: '918751228502315',
-    title: '促轉會《監控檔案當事人閱覽計畫》：李喬',
+    title: '監控檔案當事人閱覽計畫：李喬',
     image: '/images/li-qiao.jpg'
   },
   {
     type: 'fb',
     id: '1623059037831271',
-    title: '「遲來的正義」：促轉會有罪判決撤銷公告',
+    title: '遲來的正義：促轉會有罪判決撤銷公告',
     image: '/images/innocence.jpg'
   },
   {
@@ -123,11 +123,11 @@ export const links = [
     reference: 'https://www.facebook.com/twtjc/'
   },
   {
-    text: '《療遇時光機》Facebook 專頁',
+    text: '療遇時光機',
     reference: 'https://www.facebook.com/Encounteringourpast/'
   },
   {
-    text: '互動式遊戲《想家》',
+    text: '互動式遊戲：想家',
     reference: 'https://www.tjc-monitoraround.tw'
   },
   {
