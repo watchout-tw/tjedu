@@ -17,7 +17,7 @@ export const projects = [
     title: '回家：文字冒險遊戲',
     image: 'project-banner-17.png',
     team: '周冠妤、陳羿竹、柯昱均',
-    description: '數十年前他們被迫從自己的家庭、原先的人生軌道分離。而如今轉型正義才讓他們開啟了回家的路，雖然直到今日的台灣，轉型正義仍是一個正在進行、有許多問題尚待解決的工作。',
+    description: '「你不知道媽媽過去發生的故事，原來回家這麼不容易⋯」\n\n現在隨時有人監控你的每一句話、每一個行為，你只是一個想好好玩社團的學生，卻發現媽媽欲言又止，在和媽媽的對話中，一點一點發現深埋在媽媽記憶裡的那些秘密⋯',
     originalDoc: 'https://docs.google.com/document/d/1y1fHM3tyfPHfoPGhoLYIi1PzY4ZAosUEyL7ANeQjxOE/edit',
     result: 'https://docs.google.com/document/d/1xOIGLJ3IFtZogGtgmDmB0sF4jY3zHfqqIVixFpPPmYY/edit'
   },
@@ -26,7 +26,7 @@ export const projects = [
     title: '創受難者前輩臉書',
     image: 'project-banner-5.png',
     team: '張恬瑜、陳怡璇、李建宏、王怡婷',
-    description: '數十年前他們被迫從自己的家庭、原先的人生軌道分離。而如今轉型正義才讓他們開啟了回家的路，雖然直到今日的台灣，轉型正義仍是一個正在進行、有許多問題尚待解決的工作。',
+    description: '「如果他們現在還活著，會想在臉書上說什麼？」\n\n如果你是政治受難者，你會如何使用自己的 FB 和 IG？po 文、拍照、tag 難友或當年那些加害者，利用網路的力量讓真相被看見⋯',
     originalDoc: 'https://docs.google.com/document/d/1XO1zfR3i4C5HVBDIHDokc1KjnoYt2rL6chdZjfxJPAo/edit',
     result: 'https://docs.google.com/document/d/1QpFp_tEmSUemwKn7Q3SIU7Au2BUb8H6d4vF7I9fiB-E/edit'
   },
@@ -35,7 +35,7 @@ export const projects = [
     title: '視覺化文本：身體紀念碑',
     image: 'project-banner-10.png',
     team: '李佳泓',
-    description: '數十年前他們被迫從自己的家庭、原先的人生軌道分離。而如今轉型正義才讓他們開啟了回家的路，雖然直到今日的台灣，轉型正義仍是一個正在進行、有許多問題尚待解決的工作。',
+    description: '「用身體同理歷史。」\n\n放掉習慣接收資訊的方式，嘗試沈浸在歷史的洪流裡，讓先人的記憶沖刷你的身體，從感受中接收說不出的故事。',
     originalDoc: 'https://docs.google.com/document/d/1jquWBAwTREr64yHc4r2FKTon0QONKD7q1y5-ypuTFiM/edit',
     result: 'https://docs.google.com/document/d/16H8h7cbhVWCwWgCh9Bhkib3P5wuoYQ6pLBDCENxsOnU/edit'
   },
@@ -44,7 +44,7 @@ export const projects = [
     title: '陸拾日',
     image: 'project-banner-22.png',
     team: '陳彥宇',
-    description: '數十年前他們被迫從自己的家庭、原先的人生軌道分離。而如今轉型正義才讓他們開啟了回家的路，雖然直到今日的台灣，轉型正義仍是一個正在進行、有許多問題尚待解決的工作。',
+    description: '「60 天後，槍決所有涉案人員。」\n\n雙手被銬在軍法處的監牢，獄卒帶來你在 60 天後將被執行槍決的消息，在槍決日到來之前，你會採取什麼行動，將生命或理想延續下去？',
     originalDoc: 'https://docs.google.com/document/d/1sMX9DXT_uDCNCP42h_ip3uX-YuPH0cxabIFpK-Ys47s/edit',
     result: 'https://docs.google.com/document/d/1M-snk6tryQikTHuULvy31IwyZAGm3FCaRJTJXoKqiYc/edit'
   },
@@ -53,7 +53,7 @@ export const projects = [
     title: '牆國與蛋',
     image: 'project-banner-24.png',
     team: '歐湘瀅、簡廷軒',
-    description: '數十年前他們被迫從自己的家庭、原先的人生軌道分離。而如今轉型正義才讓他們開啟了回家的路，雖然直到今日的台灣，轉型正義仍是一個正在進行、有許多問題尚待解決的工作。',
+    description: '「民主自由的理想，值多少錢？」\n\n三方陣營「威權政府」、「社會大眾」、「理想者」彼此競爭。「政府」收買大眾，「理想者」得想辦法得到更多認同，身為「社會大眾」又會怎麼選擇？',
     originalDoc: 'https://docs.google.com/document/d/14-X_rLNjdGVVo0e_O7H2I31bELY8jqJwHhBugY_T5VE/edit',
     result: 'https://docs.google.com/document/d/1VOkKrzBWNVT7Q9ZBLjWBVP-VJFbq7vQVWw64OMt48C0/edit'
   },
@@ -62,7 +62,7 @@ export const projects = [
     title: '考古小隊秘密探險：阿石的造神古遺跡',
     image: 'project-banner-29.png',
     team: '朱芳儀、蘇琬婷',
-    description: '數十年前他們被迫從自己的家庭、原先的人生軌道分離。而如今轉型正義才讓他們開啟了回家的路，雖然直到今日的台灣，轉型正義仍是一個正在進行、有許多問題尚待解決的工作。',
+    description: '「阿石是神還是人？來探勘他的古遺跡就知道！」\n\n讓我們組成一支考古小隊，搭乘時光機回到近未來，探索阿石（蔣介石）的古遺跡（中正紀念堂）如何造神？',
     originalDoc: 'https://docs.google.com/document/d/1Jl_wG99JA7cSFs6DMBU51ktqMaL7cwpYagpu7CJ67Ag/edit',
     result: 'https://docs.google.com/document/d/1ffe3AXiVqkMB5gE7haGlLgG0PTmIau-TS_3gknco-PE/edit'
   }
