@@ -23,7 +23,7 @@ export const projects = [
   },
   {
     id: 5,
-    title: '創受難者前輩臉書',
+    title: '受難者臉書',
     image: 'project-banner-5.png',
     team: '張恬瑜、陳怡璇、李建宏、王怡婷',
     description: '「如果他們現在還活著，會想在臉書上說什麼？」\n\n如果你是政治受難者，你會如何使用自己的 FB 和 IG？po 文、拍照、tag 難友或當年那些加害者，利用網路的力量讓真相被看見⋯',
@@ -32,7 +32,7 @@ export const projects = [
   },
   {
     id: 10,
-    title: '視覺化文本：身體紀念碑',
+    title: '身體時光機',
     image: 'project-banner-10.png',
     team: '李佳泓',
     description: '「用身體同理歷史。」\n\n放掉習慣接收資訊的方式，嘗試沈浸在歷史的洪流裡，讓先人的記憶沖刷你的身體，從感受中接收說不出的故事。',

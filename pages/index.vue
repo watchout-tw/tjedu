@@ -85,7 +85,7 @@
         </div>
         <div class="org margin-bottom-single">
           <img src="/images/watchout-logo-white.png" height="24px" />
-          <div class="margin-top-bottom-8 font-size-small">用心協辦</div>
+          <div class="margin-top-bottom-8 font-size-small">用心承辦</div>
         </div>
       </div>
     </div>
